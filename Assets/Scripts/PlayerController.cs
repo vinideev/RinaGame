@@ -1,16 +1,46 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private IControllable currentCharacter;
+
+    [SerializeField] private OzyFollowing ozy;
+    [SerializeField] private Movement rina;
+
     void Start()
     {
-        
+        SetCharacter(rina);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCharacter(IControllable character)
     {
-        
+        currentCharacter = character;
     }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        if (currentCharacter != null)
+            currentCharacter.OnMove(context.ReadValue<Vector2>());
+    }
+
+    public void OnChange(InputAction.CallbackContext context)
+
+    {
+        if (context.performed && currentCharacter != null)
+        {
+            currentCharacter.OnChange();
+
+            
+            if (currentCharacter == rina)
+            {
+                SetCharacter(ozy);
+
+            }
+                
+            else
+                SetCharacter(rina);
+        }
+    }
+
 }

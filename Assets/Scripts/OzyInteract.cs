@@ -13,7 +13,7 @@ public class OzyInteract : MonoBehaviour , IInteractable
     {
 
         OzyFollowing ozy = GameObject.FindAnyObjectByType<OzyFollowing>();
-        if (ozy != null) ozy.Change();
+        if (ozy != null) ozy.OnChange();
     }
 
 }

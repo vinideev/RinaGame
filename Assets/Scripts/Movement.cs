@@ -1,37 +1,31 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour, IControllable
+
 {
-    public Rigidbody2D rig;
+    public Rigidbody2D rigRina;
     public float moveSpeed = 5f;
     private Vector2 moveInput;
-    public bool isControlling = true;
 
-    void Start()
+    void Awake()
     {
-        rig = GetComponent<Rigidbody2D>();
+        rigRina = GetComponent<Rigidbody2D>();
+    }
 
+    public void OnMove(Vector2 input)
+    {
+        moveInput = input;
+    }
+
+    public void OnChange()
+    {
+        Debug.Log("Rina recebeu comando de troca!");
     }
 
     void Update()
     {
-    
-
-        if (!isControlling)
-        {
-            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-            return;
-        }
-
-        rig.linearVelocity = moveInput * moveSpeed;
-
-
+        rigRina.linearVelocity = moveInput * moveSpeed;
     }
 
-    public void Move(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-
-    }
 }
