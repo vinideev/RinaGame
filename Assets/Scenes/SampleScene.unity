@@ -369,6 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a604317ee5857c74eaa24aa3c2ab3a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  ozy: {fileID: 0}
+  rina: {fileID: 0}
 --- !u!4 &1500199960
 Transform:
   m_ObjectHideFlags: 0
@@ -376,6 +378,37 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500199958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.74442, y: 0.02728, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1804964470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804964471}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804964471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804964470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.74442, y: 0.02728, z: 0}
@@ -556,9 +589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ece45c94e3edb5498a64164df51befa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  rig: {fileID: 1868585807}
+  rigRina: {fileID: 0}
   moveSpeed: 5
-  isControlling: 1
 --- !u!50 &1868585807
 Rigidbody2D:
   serializedVersion: 5
@@ -776,12 +808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae70a8a03d471654b95b2f381f8f43ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  rinaPosition: {fileID: 1868585810}
   rigOzy: {fileID: 1978352596}
   moveSpeed: 5
-  stopingDistance: 1.5
-  isContolled: 0
-  offset: {x: 1.5, y: 0, z: 0}
 --- !u!212 &1978352598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -990,3 +1018,4 @@ SceneRoots:
   - {fileID: 1868585810}
   - {fileID: 1978352599}
   - {fileID: 1500199960}
+  - {fileID: 1804964471}

@@ -11,6 +11,7 @@ public class OzyFollowing : MonoBehaviour, IControllable
     void Awake()
     {
         rigOzy = GetComponent<Rigidbody2D>();
+        
     }
 
     public void OnMove(Vector2 input)

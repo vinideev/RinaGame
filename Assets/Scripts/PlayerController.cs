@@ -8,9 +8,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private OzyFollowing ozy;
     [SerializeField] private Movement rina;
 
+    public GameObject ozyPrefab;
+    public Transform rinaPosition;
+
     void Start()
     {
         SetCharacter(rina);
+       
     }
 
     public void SetCharacter(IControllable character)
@@ -34,12 +38,16 @@ public class PlayerController : MonoBehaviour
             
             if (currentCharacter == rina)
             {
+                Instantiate(ozyPrefab, rinaPosition.position + new Vector3(1.5f,0,0), Quaternion.identity);
                 SetCharacter(ozy);
 
             }
                 
             else
+                
                 SetCharacter(rina);
+                DestroyImmediate(ozy, true);
+
         }
     }
 
