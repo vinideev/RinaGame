@@ -5,9 +5,12 @@ public class PlayerController : MonoBehaviour
 {
     private IControllable currentCharacter;
 
-    [SerializeField] private OzyFollowing ozy;
-    [SerializeField] private Movement rina;
 
+    [SerializeField] private Movement rina;
+    private GameObject ozyInstance;
+    private GameObject catInstance;
+
+    public GameObject catPrefab;
     public GameObject ozyPrefab;
     public Transform rinaPosition;
 
@@ -33,21 +36,54 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed && currentCharacter != null)
         {
-            currentCharacter.OnChange();
-
-            
-            if (currentCharacter == rina)
+            if (ozyInstance == null)
             {
-                Instantiate(ozyPrefab, rinaPosition.position + new Vector3(1.5f,0,0), Quaternion.identity);
-                SetCharacter(ozy);
+                ozyInstance = Instantiate(ozyPrefab, rinaPosition.position + new Vector3(2f, 0, 0), Quaternion.identity);
 
+                FamilarInvoke ozyComponent = ozyInstance.GetComponent<FamilarInvoke>();
+
+                currentCharacter.OnChange();
+
+                
+                SetCharacter(ozyComponent);
             }
-                
+            
             else
+            {
+                Destroy(ozyInstance); 
                 
+                ozyInstance = null;   
                 SetCharacter(rina);
-                DestroyImmediate(ozy, true);
+            }
+        }
+    }
 
+
+
+    public void InvokeCat(InputAction.CallbackContext context)
+
+    {
+        if (context.performed && currentCharacter != null)
+        {
+            if (catInstance == null)
+            {
+                catInstance = Instantiate(catPrefab, rinaPosition.position + new Vector3(2f, 0, 0), Quaternion.identity);
+
+                FamilarInvoke catComponent = catInstance.GetComponent<FamilarInvoke>();
+
+                currentCharacter.InvokeCat();
+
+
+                SetCharacter(catComponent);
+            }
+
+            else
+            {
+                Destroy(catInstance);
+
+                catInstance = null;
+                SetCharacter(rina);
+            }
         }
     }
 

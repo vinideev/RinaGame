@@ -12,8 +12,10 @@ public class OzyInteract : MonoBehaviour , IInteractable
     void ChangePlayer()
     {
 
-        OzyFollowing ozy = GameObject.FindAnyObjectByType<OzyFollowing>();
+        FamilarInvoke ozy = GameObject.FindAnyObjectByType<FamilarInvoke>();
         if (ozy != null) ozy.OnChange();
+        FamilarInvoke cat = GameObject.FindAnyObjectByType<FamilarInvoke>();
+        if (cat != null) cat.InvokeCat();
     }
 
 }

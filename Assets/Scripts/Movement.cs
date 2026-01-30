@@ -23,6 +23,12 @@ public class Movement : MonoBehaviour, IControllable
         Debug.Log("Rina recebeu comando de troca!");
     }
 
+    public void InvokeCat()
+    {
+
+        Debug.Log("Rina vai invocar o gato");
+    }
+
     void Update()
     {
         rigRina.linearVelocity = moveInput * moveSpeed;

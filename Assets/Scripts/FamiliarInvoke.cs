@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.GraphicsBuffer;
 
-public class OzyFollowing : MonoBehaviour, IControllable
+public class FamilarInvoke : MonoBehaviour, IControllable
 {
     public Rigidbody2D rigOzy;
     public float moveSpeed = 5f;
@@ -23,6 +23,12 @@ public class OzyFollowing : MonoBehaviour, IControllable
     {
         // Aqui você pode colocar lógica extra se quiser
         Debug.Log("Ozy recebeu comando de troca!");
+    }
+
+    public void InvokeCat()
+    {
+        // Aqui você pode colocar lógica extra se quiser
+        Debug.Log("Cat recebeu comando de troca!");
     }
 
     void Update()
