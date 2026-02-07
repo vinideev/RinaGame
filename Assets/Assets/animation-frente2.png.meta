@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: bdcafabae9f9cf84898b380ebf237d34
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3204950098622252909
+    second: animation-frente2_0
+  - first:
+      213: -84557682497648557
+    second: animation-frente2_1
+  - first:
+      213: -3138010708240344449
+    second: animation-frente2_2
+  - first:
+      213: 6022516830198603411
+    second: animation-frente2_3
+  - first:
+      213: 5572637384083092460
+    second: animation-frente2_4
+  - first:
+      213: -3792343603492064813
+    second: animation-frente2_5
+  - first:
+      213: 7964615609947522550
+    second: animation-frente2_6
+  - first:
+      213: -1323120370336623665
+    second: animation-frente2_7
+  - first:
+      213: -2410931380517934044
+    second: animation-frente2_8
+  - first:
+      213: -6299904877759494748
+    second: animation-frente2_9
+  - first:
+      213: 2160756723654639022
+    second: animation-frente2_10
+  - first:
+      213: 552859818054244894
+    second: animation-frente2_11
+  - first:
+      213: -1013328327356622019
+    second: animation-frente2_12
+  - first:
+      213: -5648393772146086224
+    second: animation-frente2_13
+  - first:
+      213: -2099238870868851201
+    second: animation-frente2_14
+  - first:
+      213: -4459656337100424390
+    second: animation-frente2_15
+  - first:
+      213: 1839154881528963869
+    second: animation-frente2_16
+  - first:
+      213: -5734872077487922331
+    second: animation-frente2_17
+  - first:
+      213: -3576628602350433982
+    second: animation-frente2_18
+  - first:
+      213: 2744680287822409582
+    second: animation-frente2_19
+  - first:
+      213: -8346287083855618028
+    second: animation-frente2_20
+  - first:
+      213: -6471970746058380701
+    second: animation-frente2_21
+  - first:
+      213: -1635236151270296514
+    second: animation-frente2_22
+  - first:
+      213: -7533401147741315968
+    second: animation-frente2_23
+  - first:
+      213: 6552327432048560427
+    second: animation-frente2_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animation-frente2_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 494
+        width: 70
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d678b3752254a7c20800000000000000
+      internalID: 3204950098622252909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 493
+        width: 72
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35882bb5c3793def0800000000000000
+      internalID: -84557682497648557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 493
+        width: 72
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a56f103eb8374d0800000000000000
+      internalID: -3138010708240344449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 493
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e9ccdf527449350800000000000000
+      internalID: 6022516830198603411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 493
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3b55cfc2cf55d40800000000000000
+      internalID: 5572637384083092460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 372
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d171a7d593ee5bc0800000000000000
+      internalID: -3792343603492064813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 370
+        width: 59
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5047be2bff78e60800000000000000
+      internalID: 7964615609947522550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_7
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 369
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3900b880553ade0800000000000000
+      internalID: -1323120370336623665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 368
+        width: 60
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ce26edea6aa8ed0800000000000000
+      internalID: -2410931380517934044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 369
+        width: 59
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5056a54ed3298a0800000000000000
+      internalID: -6299904877759494748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 247
+        width: 57
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadb87fbacc8cfd10800000000000000
+      internalID: 2160756723654639022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 248
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ad5b943172ca700800000000000000
+      internalID: 552859818054244894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_12
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 247
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b511f414fefe1f0800000000000000
+      internalID: -1013328327356622019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 245
+        width: 72
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be24bb6acfdc91b0800000000000000
+      internalID: -5648393772146086224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 244
+        width: 71
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff58b238e510ed2e0800000000000000
+      internalID: -2099238870868851201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 124
+        width: 71
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b3fce803e1c12c0800000000000000
+      internalID: -4459656337100424390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 123
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13a578de9df58910800000000000000
+      internalID: 1839154881528963869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_17
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 122
+        width: 73
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563a60dea34a960b0800000000000000
+      internalID: -5734872077487922331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_18
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 125
+        width: 71
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24986676c334d5ec0800000000000000
+      internalID: -3576628602350433982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_19
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 127
+        width: 59
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6feba90e20171620800000000000000
+      internalID: 2744680287822409582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 5
+        width: 61
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410ea552e180c2c80800000000000000
+      internalID: -8346287083855618028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 5
+        width: 59
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a687c75e0fe26a0800000000000000
+      internalID: -6471970746058380701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_22
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 6
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3438af52697e49e0800000000000000
+      internalID: -1635236151270296514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_23
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 6
+        width: 59
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cdb5ed19bf37790800000000000000
+      internalID: -7533401147741315968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation-frente2_24
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 5
+        width: 63
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b294d4f651b8eea50800000000000000
+      internalID: 6552327432048560427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animation-frente2_0: 3204950098622252909
+      animation-frente2_1: -84557682497648557
+      animation-frente2_10: 2160756723654639022
+      animation-frente2_11: 552859818054244894
+      animation-frente2_12: -1013328327356622019
+      animation-frente2_13: -5648393772146086224
+      animation-frente2_14: -2099238870868851201
+      animation-frente2_15: -4459656337100424390
+      animation-frente2_16: 1839154881528963869
+      animation-frente2_17: -5734872077487922331
+      animation-frente2_18: -3576628602350433982
+      animation-frente2_19: 2744680287822409582
+      animation-frente2_2: -3138010708240344449
+      animation-frente2_20: -8346287083855618028
+      animation-frente2_21: -6471970746058380701
+      animation-frente2_22: -1635236151270296514
+      animation-frente2_23: -7533401147741315968
+      animation-frente2_24: 6552327432048560427
+      animation-frente2_3: 6022516830198603411
+      animation-frente2_4: 5572637384083092460
+      animation-frente2_5: -3792343603492064813
+      animation-frente2_6: 7964615609947522550
+      animation-frente2_7: -1323120370336623665
+      animation-frente2_8: -2410931380517934044
+      animation-frente2_9: -6299904877759494748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

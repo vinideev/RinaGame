@@ -1,18 +1,23 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     private IControllable currentCharacter;
+    public CinemachineCamera cameraPlayers;
+    public Transform ozyCameraFollow;
+
 
 
     [SerializeField] private Movement rina;
-    private GameObject ozyInstance;
+    public GameObject ozyInstance;
     private GameObject catInstance;
 
     public GameObject catPrefab;
     public GameObject ozyPrefab;
     public Transform rinaPosition;
+
 
     void Start()
     {
@@ -46,12 +51,15 @@ public class PlayerController : MonoBehaviour
 
                 
                 SetCharacter(ozyComponent);
+                cameraPlayers.Follow = ozyCameraFollow;
+                cameraPlayers.LookAt = ozyCameraFollow;
+                
             }
             
             else
             {
-                Destroy(ozyInstance); 
-                
+                Destroy(ozyInstance);
+
                 ozyInstance = null;   
                 SetCharacter(rina);
             }
@@ -72,9 +80,9 @@ public class PlayerController : MonoBehaviour
                 FamilarInvoke catComponent = catInstance.GetComponent<FamilarInvoke>();
 
                 currentCharacter.InvokeCat();
-
-
                 SetCharacter(catComponent);
+                cameraPlayers.Follow = ozyCameraFollow;
+                cameraPlayers.LookAt = ozyCameraFollow;
             }
 
             else
