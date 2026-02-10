@@ -3,19 +3,21 @@ using UnityEngine;
 public class BlackoutManager : MonoBehaviour
 {
     private int awake = 0;
-    public string[] statues;
-
-    void Start()
-    {
-
-    }
+    private int finalAwake = 3;
+    public GameObject wall;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Statue")){
 
-            AddAwake();
-            //Destroy(gameObject.CompareTag(statues[]));
+            StatueInfo info = collision.gameObject.GetComponent<StatueInfo>();
+
+            if (info != null && !info.alreadyTouched)
+            {
+                info.alreadyTouched = true;
+                AddAwake();
+                collision.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+            }
         }
     }
 
@@ -23,5 +25,19 @@ public class BlackoutManager : MonoBehaviour
     {
         awake++;
         Debug.Log("Você conseguiu despertar o começo da sua maldição");
+        if (awake >= finalAwake)
+        {
+            UnlockPath();
+        }
+
+    }
+
+    void UnlockPath()
+    {
+        Debug.Log("O caminho foi liberado!");
+        if (wall != null)
+        {
+            wall.SetActive(false); 
+        }
     }
 }

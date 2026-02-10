@@ -5,13 +5,14 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private IControllable currentCharacter;
-    public CinemachineCamera cameraPlayers;
-    public Transform ozyCameraFollow;
+    public CinemachineCamera cameraRina;
+    public CinemachineCamera cameraOzy;
+    public CinemachineCamera cameraCat;
 
 
 
     [SerializeField] private Movement rina;
-    public GameObject ozyInstance;
+    private GameObject ozyInstance;
     private GameObject catInstance;
 
     public GameObject catPrefab;
@@ -21,7 +22,9 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+
         SetCharacter(rina);
+        cameraRina.Priority = 50;
        
     }
 
@@ -51,8 +54,15 @@ public class PlayerController : MonoBehaviour
 
                 
                 SetCharacter(ozyComponent);
-                cameraPlayers.Follow = ozyCameraFollow;
-                cameraPlayers.LookAt = ozyCameraFollow;
+                
+
+               cameraOzy.Priority = 40;
+               cameraRina.Priority = 20;
+               cameraOzy.Follow = ozyInstance.transform;
+                
+                
+               
+              
                 
             }
             
@@ -62,6 +72,8 @@ public class PlayerController : MonoBehaviour
 
                 ozyInstance = null;   
                 SetCharacter(rina);
+                cameraOzy.Priority = 10;
+                cameraRina.Priority = 30;
             }
         }
     }
@@ -81,8 +93,11 @@ public class PlayerController : MonoBehaviour
 
                 currentCharacter.InvokeCat();
                 SetCharacter(catComponent);
-                cameraPlayers.Follow = ozyCameraFollow;
-                cameraPlayers.LookAt = ozyCameraFollow;
+                cameraCat.Priority = 40;
+                cameraRina.Priority = 20;
+                cameraCat.Follow = catInstance.transform;
+
+
             }
 
             else
@@ -91,6 +106,8 @@ public class PlayerController : MonoBehaviour
 
                 catInstance = null;
                 SetCharacter(rina);
+                cameraCat.Priority = 10;
+                cameraRina.Priority = 30;
             }
         }
     }

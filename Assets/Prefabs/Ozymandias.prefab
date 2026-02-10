@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54709db8b67cebb4b9cf543437837bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlackoutManager
+  statues: []
 --- !u!61 &-4155072026372461820
 BoxCollider2D:
   m_ObjectHideFlags: 0
