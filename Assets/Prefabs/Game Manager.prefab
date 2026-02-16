@@ -45,10 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a604317ee5857c74eaa24aa3c2ab3a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  rina: {fileID: 0}
+  cameraRina: {fileID: 7809000194712896122, guid: 69d84a195d1f254458071523d08d220f, type: 3}
+  cameraOzy: {fileID: 3896419170120012085, guid: a4fb7d0839513f94292ab974edba9e72, type: 3}
+  cameraCat: {fileID: 4463380995644682975, guid: a3312b4485c61bd4b87aa266ef19858f, type: 3}
+  rina: {fileID: 811129919431634583, guid: 78c2a4ed51ad5464487cf1a54cf90acd, type: 3}
   catPrefab: {fileID: 8333420697950196407, guid: aa052510dad511043926dd13d4babd53, type: 3}
   ozyPrefab: {fileID: 914239519946129044, guid: 5446dfdfcdba92742ac2e55d5e972547, type: 3}
-  rinaPosition: {fileID: 0}
+  rinaPosition: {fileID: 7810540725387918525, guid: 78c2a4ed51ad5464487cf1a54cf90acd, type: 3}
 --- !u!114 &1573095293138329771
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -34,10 +34,11 @@ public class BlackoutManager : MonoBehaviour
 
     void UnlockPath()
     {
-        Debug.Log("O caminho foi liberado!");
+       
         if (wall != null)
         {
-            wall.SetActive(false); 
+             Debug.Log("O caminho foi liberado!");
+            wall.SetActive(false);
         }
     }
 }
