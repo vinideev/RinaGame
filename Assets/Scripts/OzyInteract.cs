@@ -3,10 +3,9 @@ using UnityEngine;
 public class OzyInteract : MonoBehaviour , IInteractable
 {
     
-    public void Change()
+    public void Interact()
     {
         ChangePlayer();
-
     }
 
     void ChangePlayer()

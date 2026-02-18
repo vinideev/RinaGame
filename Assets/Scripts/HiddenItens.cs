@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class HiddenItens : MonoBehaviour
 {
@@ -11,7 +9,7 @@ public class HiddenItens : MonoBehaviour
     private void Start()
     {
 
-        //Usar apenas gameObject(com "g" minúsculo) quando quiser se referir ao objeto onde o script está.
+        //Usar apenas gameObject(com "g" minï¿½sculo) quando quiser se referir ao objeto onde o script estï¿½.
         item = this.gameObject;
         render = GetComponent<SpriteRenderer>();
         render.enabled = false;

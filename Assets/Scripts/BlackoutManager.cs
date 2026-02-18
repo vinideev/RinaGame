@@ -6,6 +6,18 @@ public class BlackoutManager : MonoBehaviour
     private int finalAwake = 3;
     public GameObject wall;
 
+    public int AwakeCount
+    {
+        get { return awake; }
+        set { awake = value; }
+    }
+
+    public void SetWallState(bool unlocked)
+    {
+        if (wall != null)
+            wall.SetActive(!unlocked);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Statue")){
@@ -24,7 +36,7 @@ public class BlackoutManager : MonoBehaviour
     void AddAwake()
     {
         awake++;
-        Debug.Log("Você conseguiu despertar o começo da sua maldição");
+        Debug.Log("Vocï¿½ conseguiu despertar o comeï¿½o da sua maldiï¿½ï¿½o");
         if (awake >= finalAwake)
         {
             UnlockPath();

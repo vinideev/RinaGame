@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using static UnityEngine.GraphicsBuffer;
 
 public class FamilarInvoke : MonoBehaviour, IControllable
 {
@@ -21,13 +19,13 @@ public class FamilarInvoke : MonoBehaviour, IControllable
 
     public void OnChange()
     {
-        // Aqui você pode colocar lógica extra se quiser
+        // Aqui vocï¿½ pode colocar lï¿½gica extra se quiser
         Debug.Log("Ozy recebeu comando de troca!");
     }
 
     public void InvokeCat()
     {
-        // Aqui você pode colocar lógica extra se quiser
+        // Aqui vocï¿½ pode colocar lï¿½gica extra se quiser
         Debug.Log("Cat recebeu comando de troca!");
     }
 
