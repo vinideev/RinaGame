@@ -3,7 +3,7 @@ using UnityEngine;
 public class HiddenItens : MonoBehaviour
 {
     public GameObject cat;
-    public Transform catPosition;
+    public Transform puzzlePosition;
     private SpriteRenderer render;
     private GameObject item;
     private void Start()
@@ -34,10 +34,11 @@ public class HiddenItens : MonoBehaviour
         if (GetComponent<Rigidbody2D>())
         {
             GetComponent<Rigidbody2D>().simulated = false;
-        }        
+        }
+        render.enabled = true;
         GetComponent<Collider2D>().enabled = false;
-        transform.position = catPosition.position;
-        transform.SetParent(catPosition);
+        transform.position = puzzlePosition.position;
+        transform.SetParent(puzzlePosition);
     }
 
 
