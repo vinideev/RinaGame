@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour, IControllable
     void Awake()
     {
         rigRina = GetComponent<Rigidbody2D>();
+        anim.SetFloat("Horizontal", 0f);
+        anim.SetFloat("Vertical", -1f);
     }
 
     public void OnMove(Vector2 input)
