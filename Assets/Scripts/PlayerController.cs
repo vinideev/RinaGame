@@ -19,13 +19,18 @@ public class PlayerController : MonoBehaviour
     public GameObject ozyPrefab;
     public Transform rinaPosition;
 
+    public AudioSource audioSource;
+    public AudioClip stepSound;
+
 
     void Start()
     {
 
         SetCharacter(rina);
         cameraRina.Priority = 50;
-       
+
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
     }
 
     public void SetCharacter(IControllable character)
@@ -54,9 +59,9 @@ public class PlayerController : MonoBehaviour
 
                 
                 SetCharacter(ozyComponent);
-                
 
-               cameraOzy.Priority = 40;
+                audioSource.PlayOneShot(stepSound);
+                cameraOzy.Priority = 40;
                cameraRina.Priority = 20;
                cameraOzy.Follow = ozyInstance.transform;
                 
@@ -93,6 +98,7 @@ public class PlayerController : MonoBehaviour
 
                 currentCharacter.InvokeCat();
                 SetCharacter(catComponent);
+                audioSource.PlayOneShot(stepSound);
                 cameraCat.Priority = 40;
                 cameraRina.Priority = 20;
                 cameraCat.Follow = catInstance.transform;
