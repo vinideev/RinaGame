@@ -36,7 +36,7 @@ public class BlackoutManager : MonoBehaviour
     void AddAwake()
     {
         awake++;
-        Debug.Log("Voc� conseguiu despertar o come�o da sua maldi��o");
+        Debug.Log("Uma parte da maldição foi quebrada!");
         if (awake >= finalAwake)
         {
             UnlockPath();
@@ -46,11 +46,12 @@ public class BlackoutManager : MonoBehaviour
 
     void UnlockPath()
     {
-       
-        if (wall != null)
+        GameObject barrier = GameObject.FindWithTag("Barrier");
+        if (barrier != null)
         {
-             Debug.Log("O caminho foi liberado!");
-            wall.SetActive(false);
+            Debug.Log("O caminho foi liberado!");
+            barrier.SetActive(false);
+            
         }
     }
 }

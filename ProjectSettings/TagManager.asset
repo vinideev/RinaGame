@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Statue
   - Cat
+  - Barrier
   layers:
   - Default
   - TransparentFX
