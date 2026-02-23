@@ -13,6 +13,10 @@ public class Movement : MonoBehaviour, IControllable
     void Awake()
     {
         rigRina = GetComponent<Rigidbody2D>();
+     anim = GetComponent<Animator>();
+
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
         anim.SetFloat("Horizontal", 0f);
         anim.SetFloat("Vertical", -1f);
     }
