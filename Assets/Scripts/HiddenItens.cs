@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HiddenItens : MonoBehaviour
 {
@@ -6,6 +7,9 @@ public class HiddenItens : MonoBehaviour
     public Transform puzzlePosition;
     private SpriteRenderer render;
     private GameObject item;
+
+    public Image ring;
+
     private void Start()
     {
 
@@ -13,6 +17,7 @@ public class HiddenItens : MonoBehaviour
         item = this.gameObject;
         render = GetComponent<SpriteRenderer>();
         render.enabled = false;
+        ring.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +25,8 @@ public class HiddenItens : MonoBehaviour
         if(collision.gameObject.CompareTag("Cat"))
         {
             Debug.Log("Opa");
-            render.enabled = true; 
+            render.enabled = true;
+            
         }
     }
 
@@ -31,14 +37,22 @@ public class HiddenItens : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (GetComponent<Rigidbody2D>())
+
+        if (collision.gameObject.CompareTag("Cat"))
         {
-            GetComponent<Rigidbody2D>().simulated = false;
+            if (GetComponent<Rigidbody2D>())
+            {
+                GetComponent<Rigidbody2D>().simulated = false;
+            }
+            render.enabled = true;
+            ring.enabled = true;
+            GetComponent<Collider2D>().enabled = false;
+            transform.position = puzzlePosition.position;
+            transform.SetParent(puzzlePosition);
+
+
         }
-        render.enabled = true;
-        GetComponent<Collider2D>().enabled = false;
-        transform.position = puzzlePosition.position;
-        transform.SetParent(puzzlePosition);
+    
     }
 
 
