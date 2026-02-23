@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour, IControllable
     void Awake()
     {
         rigRina = GetComponent<Rigidbody2D>();
+     anim = GetComponent<Animator>();
 
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
