@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour, IControllable
-
 {
     public Rigidbody2D rigRina;
     public float moveSpeed = 5f;
@@ -10,17 +9,42 @@ public class Movement : MonoBehaviour, IControllable
     public Animator anim;
     bool isMoving;
 
+    public AudioSource audioSource;
+    public AudioClip stepSound;
+
     void Awake()
     {
         rigRina = GetComponent<Rigidbody2D>();
-     anim = GetComponent<Animator>();
+    anim = GetComponent<Animator>();
 
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
         anim.SetFloat("Horizontal", 0f);
         anim.SetFloat("Vertical", -1f);
+
+        string spawnId = NextScene.ConsumePendingSpawnPoint();
+        if (!string.IsNullOrEmpty(spawnId))
+        {
+            SpawnPoint[] points = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None);
+            foreach (var point in points)
+            {
+                if (point.spawnId == spawnId)
+                {
+                    transform.position = point.transform.position;
+                    break;
+                }
+            }
+        }
     }
 
+
+    public void PlayFootstep()
+    {
+        if (isMoving && audioSource != null && stepSound != null)
+        {
+            audioSource.PlayOneShot(stepSound);
+        }
+    }
     public void OnMove(Vector2 input)
     {
         moveInput = input;
