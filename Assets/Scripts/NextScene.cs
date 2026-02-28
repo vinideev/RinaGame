@@ -19,5 +19,9 @@ public class NextScene : MonoBehaviour
             Debug.Log("Encostou");
             SceneManager.LoadScene(nextScene);
         }
+        else
+        {
+            Debug.Log("Nao vai rolar");
+        }
     }
 }

@@ -6,6 +6,14 @@ public class BlackoutManager : MonoBehaviour
     private int finalAwake = 3;
     public GameObject wall;
 
+    public AudioSource audioSource;
+    public AudioClip witchVoice;
+
+
+    private void Start()
+    {
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+    }
     public int AwakeCount
     {
         get { return awake; }
@@ -40,6 +48,7 @@ public class BlackoutManager : MonoBehaviour
         if (awake >= finalAwake)
         {
             UnlockPath();
+            
         }
 
     }
@@ -50,6 +59,8 @@ public class BlackoutManager : MonoBehaviour
         if (barrier != null)
         {
             Debug.Log("O caminho foi liberado!");
+            Debug.Log("Objeto que disparou: " + gameObject.name + " | Som: " + witchVoice);
+            audioSource.PlayOneShot(witchVoice);
             barrier.SetActive(false);
             
         }
