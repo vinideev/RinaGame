@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class FamilarInvoke : MonoBehaviour, IControllable
 {
@@ -8,10 +9,25 @@ public class FamilarInvoke : MonoBehaviour, IControllable
     public Animator anim;
     bool isMoving;
 
+    public AudioSource audioSource;
+    public AudioClip stepSound;
+
     void Awake()
     {
         rigOzy = GetComponent<Rigidbody2D>();
-        
+
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
+    }
+
+    public void PlayFootstep()
+    {
+        if (isMoving && audioSource != null && stepSound != null)
+        {
+            audioSource.clip = stepSound;
+            audioSource.Play();
+            audioSource.SetScheduledEndTime(AudioSettings.dspTime + 0.3f);
+        }
     }
 
     public void OnMove(Vector2 input)

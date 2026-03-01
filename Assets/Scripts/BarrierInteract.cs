@@ -11,12 +11,21 @@ public class BarrierInteract : MonoBehaviour
         {
             minhaUI.SetActive(true);
         }
+
+        if (collision.collider.CompareTag("Cat"))
+        {
+            minhaUI.SetActive(true);
+        }
+
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         minhaUI.SetActive(false);
     }
+
+   
 
 
 }
