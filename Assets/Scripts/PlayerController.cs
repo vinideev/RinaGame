@@ -31,6 +31,15 @@ public class PlayerController : MonoBehaviour
 
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
+        if (NextScene.ConsumePendingStartAsKira() && catPrefab != null)
+        {
+            catInstance = Instantiate(catPrefab, rinaPosition.position, Quaternion.identity);
+            FamilarInvoke catComponent = catInstance.GetComponent<FamilarInvoke>();
+            SetCharacter(catComponent);
+            cameraCat.Priority = 40;
+            cameraRina.Priority = 20;
+            cameraCat.Follow = catInstance.transform;
+        }
     }
 
     public void SetCharacter(IControllable character)
