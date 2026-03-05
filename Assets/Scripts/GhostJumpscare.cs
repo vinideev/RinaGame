@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class GhostJumpscare : MonoBehaviour
 {
-    [SerializeField] private DollRandomizer dollRandomizer;
     [SerializeField] private float triggerDistance = 3f;
     [SerializeField] private float runSpeed = 12f;
     [SerializeField] private float runDistance = 10f;
@@ -32,7 +31,7 @@ public class GhostJumpscare : MonoBehaviour
         {
             float distance = Vector2.Distance(transform.position, player.position);
 
-            if (distance <= triggerDistance && dollRandomizer.IsRedDoll)
+            if (distance <= triggerDistance && DollRandomizer.IsRedDoll)
             {
                 hasTriggered = true;
                 isRunning = true;

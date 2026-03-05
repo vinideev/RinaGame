@@ -21,6 +21,11 @@ public class NextScene : MonoBehaviour
         return id;
     }
 
+    public static void SetPendingStartAsKira(bool value)
+    {
+        pendingStartAsKira = value;
+    }
+
     public static bool ConsumePendingStartAsKira()
     {
         bool value = pendingStartAsKira;

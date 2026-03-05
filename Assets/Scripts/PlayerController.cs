@@ -25,20 +25,48 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
-        SetCharacter(rina);
-        cameraRina.Priority = 50;
-
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
+        string spawnId = NextScene.ConsumePendingSpawnPoint();
+        if (!string.IsNullOrEmpty(spawnId))
+        {
+            SpawnPoint[] spawns = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None);
+            foreach (SpawnPoint sp in spawns)
+            {
+                if (sp.spawnId == spawnId)
+                {
+                    rina.transform.position = sp.transform.position;
+                    if (rinaPosition != null) rinaPosition.position = sp.transform.position;
+                    break;
+                }
+            }
+        }
+
+        // Verifica se deve começar como Kira
         if (NextScene.ConsumePendingStartAsKira() && catPrefab != null)
         {
+            // Começa apenas com Kira
             catInstance = Instantiate(catPrefab, rinaPosition.position, Quaternion.identity);
             FamilarInvoke catComponent = catInstance.GetComponent<FamilarInvoke>();
             SetCharacter(catComponent);
-            cameraCat.Priority = 40;
-            cameraRina.Priority = 20;
+            
+            // Desabilita Rina visualmente
+            rina.gameObject.SetActive(false);
+            
+            // Ajusta câmeras
+            cameraRina.Priority = 10;
+            cameraCat.Priority = 50;
             cameraCat.Follow = catInstance.transform;
+            
+            Debug.Log("Sessão iniciada apenas com KIRA!");
+        }
+        else
+        {
+            // Começa normalmente com Rina
+            SetCharacter(rina);
+            cameraRina.Priority = 50;
+            cameraCat.Priority = 10;
+            Debug.Log("Sessão iniciada com Rina");
         }
     }
 
