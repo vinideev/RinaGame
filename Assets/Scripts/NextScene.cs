@@ -9,6 +9,7 @@ public class NextScene : MonoBehaviour
     private static string pendingSpawnPointId;
     public static bool pendingStartAsKira;
 
+
     public static void SetPendingSpawnPoint(string id)
     {
         pendingSpawnPointId = id;
