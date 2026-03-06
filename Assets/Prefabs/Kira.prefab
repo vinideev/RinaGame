@@ -281,6 +281,8 @@ MonoBehaviour:
   rigOzy: {fileID: 1830627570140993245}
   moveSpeed: 5
   anim: {fileID: 5199058863438697181}
+  audioSource: {fileID: 0}
+  stepSound: {fileID: 0}
 --- !u!61 &-665351781052027584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -325,7 +327,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.125, y: 2.5625}
+  m_Size: {x: 1.125, y: 1.19}
   m_EdgeRadius: 0
 --- !u!95 &5199058863438697181
 Animator:
