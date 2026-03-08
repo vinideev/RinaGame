@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ public class NextScene : MonoBehaviour
     private static string pendingSpawnPointId;
     public static bool pendingStartAsKira;
 
+    public Animator transitionAnimator;
 
     public static void SetPendingSpawnPoint(string id)
     {
@@ -38,12 +40,23 @@ public class NextScene : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            pendingSpawnPointId = spawnPointId;
-            SceneManager.LoadScene(nextScene);
+           
+           StartCoroutine(LoadLevel());
         }
         else
         {
             Debug.Log("Nao vai rolar");
         }
+    }
+
+    IEnumerator LoadLevel()
+    {
+        transitionAnimator.SetTrigger("Start");
+        yield return new WaitForSeconds(0.5f);
+        pendingSpawnPointId = spawnPointId;
+        SceneManager.LoadScene(nextScene);
+        transitionAnimator.SetTrigger("End");
+
+
     }
 }
