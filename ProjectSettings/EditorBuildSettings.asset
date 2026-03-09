@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzzle Ozy.unity
     guid: 8072c76fc1849124794d50ceaca0c690
   - enabled: 1
-    path: Assets/Scenes/After Puzzle Ozy.unity
+    path: Assets/Scenes/Escada.unity
     guid: 3fec389cc40d2404a9d37e250c1eae51
   - enabled: 1
     path: Assets/Scenes/Puzzle Kira.unity
